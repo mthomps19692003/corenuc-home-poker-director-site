@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release Notes - CoreNuc Home Poker Tournament Director</title>
+  <meta name="description" content="Latest release notes for CoreNuc Home Poker Tournament Director, including version details, release date, changes, improvements, and known notes." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #1f2937;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #22c55e;
+      --accent-dark: #16a34a;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, var(--bg), #020617);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .site-header {
+      background: #020617;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-header-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.35rem;
+      font-weight: bold;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a:hover {
+      color: var(--accent);
+    }
+
+    header {
+      padding: 44px 20px;
+      text-align: center;
+      background: rgba(15, 23, 42, 0.85);
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      font-size: 2.45rem;
+    }
+
+    header p {
+      max-width: 880px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 36px 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+      background: rgba(17, 24, 39, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin-top: 0;
+      color: var(--text);
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .release-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .summary-card,
+    .change-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .summary-card strong {
+      display: block;
+      color: var(--text);
+      font-size: 1.25rem;
+      margin-top: 4px;
+    }
+
+    .change-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(34, 197, 94, 0.14);
+      border: 1px solid rgba(34, 197, 94, 0.45);
+      border-radius: 8px;
+      color: var(--text);
+      font-weight: bold;
+      padding: 6px 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 20px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: #020617;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 620px) {
+      .site-header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html">
+        <img src="corenucapps_logo_small.png" alt="CoreNucApps logo" />
+        <span>CoreNucApps</span>
+      </a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="index.html">Home</a>
+        <a href="release.html">Release</a>
+        <a href="technology.html">Technology</a>
+        <a href="screenshots.html">Screenshots</a>
+        <a href="helppage.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </div>
+
+  <header>
+    <h1>Latest Release</h1>
+    <p>
+      Release notes for the newest CoreNuc Home Poker Tournament Director build, including the changes most useful to tournament hosts and league organizers.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>CoreNuc Home Poker Tournament Director 1.2.1.0</h2>
+      <p>
+        Version 1.2.1.0 is the latest packaged release for the Windows app. This release focuses on live tournament control, stronger tournament display feedback, improved Store-ready presentation assets, and quality-of-life updates for running a home poker night.
+      </p>
+
+      <div class="release-summary">
+        <div class="summary-card">
+          <span>Version</span>
+          <strong>1.2.1.0</strong>
+        </div>
+        <div class="summary-card">
+          <span>Build</span>
+          <strong>1210</strong>
+        </div>
+        <div class="summary-card">
+          <span>Package Date</span>
+          <strong>May 24, 2026</strong>
+        </div>
+        <div class="summary-card">
+          <span>Primary Platform</span>
+          <strong>Windows</strong>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What Changed</h2>
+      <div class="change-grid">
+        <div class="change-card">
+          <span class="badge">Live Tournament Sounds</span>
+          <h3>Change sounds during active play</h3>
+          <p>
+            Tournament sound choices can now be changed while a tournament is already running, making it easier to tune the room experience without restarting the display.
+          </p>
+        </div>
+
+        <div class="change-card">
+          <span class="badge">Round Warnings</span>
+          <h3>One-minute warning popup</h3>
+          <p>
+            The tournament display and timer display now support a one-minute warning popup before a round ends, helping hosts and players prepare for the next blind level.
+          </p>
+        </div>
+
+        <div class="change-card">
+          <span class="badge">Game Setup</span>
+          <h3>Bust-out visibility in setup</h3>
+          <p>
+            Bust-out information was added to the game setup flow so tournament directors can review more of the current game state from the setup area.
+          </p>
+        </div>
+
+        <div class="change-card">
+          <span class="badge">Tournament Display</span>
+          <h3>Better display behavior</h3>
+          <p>
+            The main display, timer display, and related view models received updates that make live tournament state easier to manage and easier to present.
+          </p>
+        </div>
+
+        <div class="change-card">
+          <span class="badge">Store Assets</span>
+          <h3>Updated screenshots and logos</h3>
+          <p>
+            Store-ready screenshots and logo assets were prepared for the release, including views for setup, tournament display, player actions, TV browser display, tables, stats, settlement, and game details.
+          </p>
+        </div>
+
+        <div class="change-card">
+          <span class="badge">Support Website</span>
+          <h3>Public support pages</h3>
+          <p>
+            Public website pages were added for product overview, help content, privacy policy, technology details, screenshots, and release information.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Included App Areas</h2>
+      <ul>
+        <li>Texas Holdem game setup for players, rounds, chips, buy-ins, add-ons, rebuys, prizes, and tables.</li>
+        <li>Live tournament display with round timer, blind levels, antes, recent actions, and tournament controls.</li>
+        <li>Player action tools for rebuys, add-ons, bust outs, receipts, restores, and undo support.</li>
+        <li>TV Browser Display for showing selected tournament screens on another browser on the same home network.</li>
+        <li>Tables and seating tools for assigning seats and balancing active players.</li>
+        <li>Player stats, league standings, settlement reports, and game details review.</li>
+        <li>Settings for display options, receipt content, database import/export, default game data, and tournament sounds.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Packaging Notes</h2>
+      <p>
+        The latest Windows package is prepared as a Microsoft Store style package for CoreNuc Tournament Director. Store licensing and purchase handling are managed through the Microsoft Store listing.
+      </p>
+      <p>
+        The packaged artifact for this release is named <strong>Holdem.WinUI_1.2.1.0_x64.msix</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Known Notes</h2>
+      <ul>
+        <li>The desktop app remains the primary tournament display and source of truth.</li>
+        <li>The TV Browser Display should be used only on trusted local networks.</li>
+        <li>Phone remote connection is not enabled in this build.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CoreNucApps. All rights reserved.</p>
+    <p><a href="index.html">Home</a> | <a href="technology.html">Technology</a> | <a href="screenshots.html">Screenshots</a> | <a href="helppage.html">Help</a> | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
