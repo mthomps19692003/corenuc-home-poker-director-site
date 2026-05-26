@@ -29,6 +29,55 @@
       line-height: 1.6;
     }
 
+    .site-header {
+      background: #020617;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.35rem;
+      font-weight: bold;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a:hover {
+      color: var(--accent);
+    }
+
     header {
       padding: 48px 20px;
       text-align: center;
@@ -117,9 +166,30 @@
       background: #020617;
       font-size: 0.95rem;
     }
+
+    @media (max-width: 620px) {
+      .site-header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html">
+        <img src="corenucapps_logo_small.png" alt="CoreNucApps logo" />
+        <span>CoreNucApps</span>
+      </a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="index.html">Home</a>
+        <a href="helppage.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </div>
+
   <header>
     <h1>CoreNuc Home Poker Tournament Director</h1>
     <p>
