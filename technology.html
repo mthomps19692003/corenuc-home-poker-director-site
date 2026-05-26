@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technology - CoreNuc Home Poker Tournament Director</title>
+  <meta name="description" content="Technology used to develop CoreNuc Home Poker Tournament Director, including .NET, .NET MAUI, SQLite, ASP.NET Core, XAML, MVVM, testing, packaging, and supporting web technology." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #1f2937;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #22c55e;
+      --accent-dark: #16a34a;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, var(--bg), #020617);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .site-header {
+      background: #020617;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.35rem;
+      font-weight: bold;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a:hover {
+      color: var(--accent);
+    }
+
+    header {
+      padding: 44px 20px;
+      text-align: center;
+      background: rgba(15, 23, 42, 0.85);
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      font-size: 2.45rem;
+    }
+
+    header p {
+      max-width: 860px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 36px 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+      background: rgba(17, 24, 39, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin-top: 0;
+      color: var(--text);
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 0;
+    }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tag-list li {
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      border-radius: 8px;
+      color: var(--text);
+      padding: 8px 10px;
+      font-weight: bold;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 20px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: #020617;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 620px) {
+      .site-header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html">
+        <img src="corenucapps_logo_small.png" alt="CoreNucApps logo" />
+        <span>CoreNucApps</span>
+      </a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="index.html">Home</a>
+        <a href="technology.html">Technology</a>
+        <a href="helppage.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </div>
+
+  <header>
+    <h1>Technology</h1>
+    <p>
+      CoreNuc Home Poker Tournament Director is built with a modern .NET application stack for cross-platform user interfaces, local tournament data, live display features, and reliable release packaging.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Core Application Stack</h2>
+      <div class="tech-grid">
+        <div class="card">
+          <h3>.NET 10</h3>
+          <p>The application targets .NET 10 and uses modern C# with nullable reference types and implicit using directives enabled.</p>
+        </div>
+        <div class="card">
+          <h3>.NET MAUI</h3>
+          <p>The shared application is built with .NET MAUI so the same tournament workflow can be delivered across desktop and mobile platforms.</p>
+        </div>
+        <div class="card">
+          <h3>C#</h3>
+          <p>C# powers the app logic, tournament rules, data services, settings, receipts, player actions, standings, and display state.</p>
+        </div>
+        <div class="card">
+          <h3>XAML</h3>
+          <p>XAML defines the app screens, modals, templates, resources, styles, and reusable UI layouts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Platforms</h2>
+      <ul class="tag-list">
+        <li>Windows WinUI</li>
+        <li>Windows 10 version 1809 or newer</li>
+        <li>Windows 11</li>
+        <li>Android 5.0 or newer</li>
+        <li>iOS 15.0 or newer</li>
+        <li>Mac Catalyst 15.0 or newer</li>
+        <li>x86</li>
+        <li>x64</li>
+        <li>ARM64</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data And State</h2>
+      <div class="tech-grid">
+        <div class="card">
+          <h3>SQLite</h3>
+          <p>Tournament data is stored locally with SQLite using sqlite-net-pcl and SQLitePCLRaw.bundle_green.</p>
+        </div>
+        <div class="card">
+          <h3>Local Settings</h3>
+          <p>App preferences store display options, receipt choices, sound selections, themes, and other local user settings.</p>
+        </div>
+        <div class="card">
+          <h3>Database Import And Export</h3>
+          <p>The app supports database backup and restore workflows for moving or protecting tournament data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Application Architecture</h2>
+      <div class="tech-grid">
+        <div class="card">
+          <h3>MVVM</h3>
+          <p>View models separate screen behavior from UI markup and organize the app around players, chips, prizes, rounds, tables, settings, and games.</p>
+        </div>
+        <div class="card">
+          <h3>CommunityToolkit.Mvvm</h3>
+          <p>The MVVM toolkit provides observable objects and command patterns used throughout the app.</p>
+        </div>
+        <div class="card">
+          <h3>Shared Services</h3>
+          <p>Services handle tournament sounds, receipts, themes, button display modes, TV display state, and app settings.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Live Display Technology</h2>
+      <div class="tech-grid">
+        <div class="card">
+          <h3>ASP.NET Core</h3>
+          <p>The desktop build can host a lightweight local web server for the TV Browser Display.</p>
+        </div>
+        <div class="card">
+          <h3>HTML, CSS, And JavaScript</h3>
+          <p>The TV Browser Display renders tournament screens in a browser and cycles through selected views such as timer, blinds, players, tables, prizes, and recent actions.</p>
+        </div>
+        <div class="card">
+          <h3>System.Text.Json</h3>
+          <p>JSON is used to publish tournament display state from the app to the local browser display endpoint.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Features Supported By The Stack</h2>
+      <ul>
+        <li>Tournament setup for players, rounds, buy-ins, rebuys, add-ons, chips, prizes, and tables.</li>
+        <li>Live tournament clock with round advancement, warnings, player actions, bust outs, undo, and final results.</li>
+        <li>League and season standings with score, wins, cashes, knockouts, average finish, paid, won, and net results.</li>
+        <li>Player receipt generation and sharing through platform-supported share features.</li>
+        <li>Customizable sounds and local display preferences.</li>
+        <li>TV browser display for sharing tournament information on another screen on the same home network.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Testing And Release</h2>
+      <div class="tech-grid">
+        <div class="card">
+          <h3>xUnit</h3>
+          <p>Automated tests use xUnit with the Visual Studio test runner integration.</p>
+        </div>
+        <div class="card">
+          <h3>coverlet</h3>
+          <p>Test coverage support is included through coverlet.collector.</p>
+        </div>
+        <div class="card">
+          <h3>Windows Packaging</h3>
+          <p>The Windows project uses WinUI, MSIX tooling support, application icons, runtime identifiers, and platform-specific packaging settings.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Supporting Website</h2>
+      <p>
+        This public support site is built as static HTML and CSS so it can be hosted simply with GitHub Pages. It provides the product overview, help content, privacy policy, and technology information for the application.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CoreNucApps. All rights reserved.</p>
+    <p><a href="index.html">Home</a> | <a href="helppage.html">Help</a> | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
