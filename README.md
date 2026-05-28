@@ -1,12 +1,12 @@
-# CoreNuc Home Poker Tournament Director Site
+# CoreNuc Poker League Manager Site
 
-This repository contains the static support website for CoreNuc Home Poker Tournament Director, a home poker league and Texas Holdem tournament management application from CoreNucApps.
+This repository contains the static support website for CoreNuc Poker League Manager, a home poker league and Texas Holdem tournament management application from CoreNucApps.
 
 ## Site Pages
 
 - `index.html` - Product overview and support contact information.
 - `release.html` - Latest app release notes and what changed.
-- `technology.html` - Technology stack used to build the Holdem application.
+- `technology.html` - Technology stack used to build the CoreNuc Poker League Manager application.
 - `screenshots.html` - App screenshots with detailed screen descriptions.
 - `helppage.html` - Full user help guide for tournament setup and operation.
 - `privacy.html` - Privacy policy for the application and support website.
@@ -14,7 +14,7 @@ This repository contains the static support website for CoreNuc Home Poker Tourn
 ## Assets
 
 - `corenucapps_logo_small.png` - CoreNucApps logo used in the shared site header.
-- `help_app_icon.png` - Help page icon copied from the Holdem app assets.
+- `help_app_icon.png` - Help page icon copied from the application assets.
 - `screenshots/` - Store-ready application screenshots used by the screenshots page.
 
 ## Local Preview

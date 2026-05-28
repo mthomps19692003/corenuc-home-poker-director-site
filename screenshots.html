@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Screenshots - CoreNuc Home Poker Tournament Director</title>
-  <meta name="description" content="Screenshots of CoreNuc Home Poker Tournament Director showing game setup, tournament display, player actions, TV browser display, tables, player stats, settlement, and game details." />
+  <title>Screenshots - CoreNuc Poker League Manager</title>
+  <meta name="description" content="Screenshots of CoreNuc Poker League Manager showing game setup, tournament display, player actions, TV browser display, tables, player stats, settlement, and game details." />
   <style>
     :root {
       --bg: #0f172a;
@@ -130,6 +130,7 @@
 
     figure {
       margin: 0;
+      position: relative;
     }
 
     figure img {
@@ -139,6 +140,25 @@
       border: 1px solid var(--border);
       border-radius: 8px;
       background: #020617;
+    }
+
+    figure::before {
+      content: "CoreNuc Poker League Manager";
+      position: absolute;
+      z-index: 1;
+      left: 8.8%;
+      top: 6.2%;
+      width: 43%;
+      height: 4.6%;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      white-space: nowrap;
+      background: #07170d;
+      color: #fff7dd;
+      font-weight: 800;
+      font-size: clamp(12px, 2.1vw, 32px);
+      line-height: 1;
     }
 
     figcaption {
@@ -212,7 +232,7 @@
   <header>
     <h1>Screenshots</h1>
     <p>
-      Explore the main screens in CoreNuc Home Poker Tournament Director, from building a tournament night to running the clock, tracking player actions, reviewing standings, and closing out the game.
+      Explore the main screens in CoreNuc Poker League Manager, from building a tournament night to running the clock, tracking player actions, reviewing standings, and closing out the game.
     </p>
   </header>
 
